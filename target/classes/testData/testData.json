@@ -1,0 +1,31 @@
+{
+	"uri": "https://us-central1-qa01-tekarch-accmanager.cloudfunctions.net",
+	"headers": {
+		"Content-Type": "application/json"
+	},
+	"payloads": {
+		"login": {
+			"username": "jpraveenarao@tekarch.com",
+			"password": "Admin123"
+		},
+		"loginwithwrong": {
+			"username": "jp@tekarch.com",
+			"password": "Admin"
+		},
+		"loginwithempty": {
+			"username": "",
+			"password": ""
+		},
+		"logout": {
+			"token": null
+		}
+	},
+	"endpoints": {
+		"login": "/login",
+		"adddata": "/addData",
+		"getdata": "/getdata",
+		"updatedata": "/updateData",
+		"deletedata": "/deleteData",
+		"logout": "/logout"
+	}
+}
